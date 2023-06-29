@@ -15,8 +15,8 @@ import org.bukkit.command.CommandSender
 class RemoveCommand(private val storage: Storage) : SubCommand {
 
     override val identifier = "remove"
-    override val permission = "comfywhitelist.remove"
-    override val usage = "/comfywl remove <name>"
+    override val permission = "betterwhitelist.remove"
+    override val usage = "/wl remove <name>"
 
     override fun execute(sender: CommandSender, args: Array<String>): Boolean {
         if(isInvalidUsage(sender) { args.size == 1 }) return false
@@ -37,7 +37,10 @@ class RemoveCommand(private val storage: Storage) : SubCommand {
         val replacementConfig = MessageFormat.ConfigBuilders.nameReplacementConfigBuilder(playerName)
         val message = MessageConfig.playerRemoved.replaceText(replacementConfig)
         sender.sendMessage(message)
-        return storage.removePlayer(playerName)
+
+        val playerUUID = sender.server.getPlayerUniqueId(playerName).toString()
+
+        return storage.removePlayer(playerUUID)
     }
 
 }

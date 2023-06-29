@@ -12,8 +12,8 @@ import org.bukkit.command.CommandSender
 class StatusCommand : SubCommand {
 
     override val identifier = "status"
-    override val permission = "comfywhitelist.status"
-    override val usage = "/comfywl status"
+    override val permission = "betterwhitelist.status"
+    override val usage = "/wl status"
 
     override fun execute(sender: CommandSender, args: Array<String>): Boolean {
         if (isInvalidUsage(sender) { args.isEmpty() }) return false

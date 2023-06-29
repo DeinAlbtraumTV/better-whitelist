@@ -71,12 +71,12 @@ tasks {
     }
 
     val shadowJar by existing(ShadowJar::class) {
-        archiveFileName.set("ComfyWhitelist-$version-standalone.jar")
+        archiveFileName.set("BetterWhitelist-$version-standalone.jar")
         destinationDirectory.set(layout.buildDirectory.dir("libs"))
     }
 
     val shadowJarLightweight by creating(ShadowJar::class) {
-        archiveFileName.set("ComfyWhitelist-$version-lightweight.jar")
+        archiveFileName.set("BetterWhitelist-$version-lightweight.jar")
         destinationDirectory.set(layout.buildDirectory.dir("libs"))
         configurations = listOf(project.configurations["withoutKotlinStdlib"])
         from(sourceSets.main.get().output)

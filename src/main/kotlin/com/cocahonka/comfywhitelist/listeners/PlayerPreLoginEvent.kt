@@ -30,8 +30,8 @@ class PlayerPreLoginEvent(private val storage: Storage) : Listener {
             return
         }
 
-        val playerName = event.name
-        if (!storage.isPlayerWhitelisted(playerName)) {
+        val playerUUID = event.uniqueId.toString()
+        if (!storage.isPlayerWhitelisted(playerUUID)) {
             event.disallow(
                 AsyncPlayerPreLoginEvent.Result.KICK_WHITELIST,
                 MessageConfig.notWhitelisted.toLegacyText()

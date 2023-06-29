@@ -14,8 +14,8 @@ import org.bukkit.command.CommandSender
 class DisableCommand(private val generalConfig: GeneralConfig) : SubCommand {
 
     override val identifier = "off"
-    override val permission = "comfywhitelist.off"
-    override val usage = "/comfywl off"
+    override val permission = "betterwhitelist.off"
+    override val usage = "/wl off"
 
     override fun execute(sender: CommandSender, args: Array<String>): Boolean {
         if (isInvalidUsage(sender) { args.isEmpty() }) return false

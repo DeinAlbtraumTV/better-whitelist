@@ -15,8 +15,8 @@ import org.bukkit.command.CommandSender
 class ClearCommand(private val storage: Storage) : SubCommand {
 
     override val identifier = "clear"
-    override val permission = "comfywhitelist.clear"
-    override val usage = "/comfywl clear"
+    override val permission = "betterwhitelist.clear"
+    override val usage = "/wl clear"
 
     override fun execute(sender: CommandSender, args: Array<String>): Boolean {
         if(isInvalidUsage(sender) { args.isEmpty() }) return false

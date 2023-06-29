@@ -20,7 +20,7 @@ import java.io.File
 @Suppress("unused")
 class ComfyWhitelist : JavaPlugin {
     companion object {
-        const val DISPLAY_NAME = "ComfyWhitelist"
+        const val DISPLAY_NAME = "BetterWhitelist"
     }
 
     constructor() : super() {

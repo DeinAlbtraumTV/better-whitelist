@@ -14,8 +14,8 @@ import org.bukkit.command.CommandSender
 class ReloadCommand(private val plugin: ComfyWhitelist) : SubCommand {
 
     override val identifier = "reload"
-    override val permission = "comfywhitelist.reload"
-    override val usage = "/comfywl reload"
+    override val permission = "betterwhitelist.reload"
+    override val usage = "/wl reload"
 
     override fun execute(sender: CommandSender, args: Array<String>): Boolean {
         if(isInvalidUsage(sender) { args.isEmpty() }) return false

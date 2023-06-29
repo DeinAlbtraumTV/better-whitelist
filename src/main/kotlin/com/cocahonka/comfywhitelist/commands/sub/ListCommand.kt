@@ -15,8 +15,8 @@ import org.bukkit.command.CommandSender
 class ListCommand(private val storage: Storage) : SubCommand {
 
     override val identifier = "list"
-    override val permission = "comfywhitelist.list"
-    override val usage = "/comfywl list"
+    override val permission = "betterwhitelist.list"
+    override val usage = "/wl list"
 
     override fun execute(sender: CommandSender, args: Array<String>): Boolean {
         if(isInvalidUsage(sender) { args.isEmpty() }) return false

@@ -1,58 +1,59 @@
-name: ComfyWhitelist
+name: BetterWhitelist
 api-version: 1.13
 authors:
   - cocahonka
   - vmlakk
+  - Forked by DeinAlbtraumTV
 main: com.cocahonka.comfywhitelist.ComfyWhitelist
 version: @version@
 softdepend: ["kotlin-stdlib"]
 commands:
-  comfywhitelist:
-    description: ComfyWhitelist management.
-    aliases: [ comfywl ]
-    permission: comfywhitelist.comfywhitelist
+  betterwhitelist:
+    description: BetterWhitelist management.
+    aliases: [ wl ]
+    permission: betterwhitelist.betterwhitelist
 permissions:
-  comfywhitelist.*:
-    description: Give access to all ComfyWhitelist commands.
+  betterwhitelist.*:
+    description: Give access to all BetterWhitelist commands.
     default: op
     children:
-      comfywhitelist.add: true
-      comfywhitelist.remove: true
-      comfywhitelist.clear: true
-      comfywhitelist.list: true
-      comfywhitelist.on: true
-      comfywhitelist.off: true
-      comfywhitelist.reload: true
-      comfywhitelist.help: true
-  comfywhitelist.comfywhitelist:
-    description: Give access to main ComfyWhitelist command.
+      betterwhitelist.add: true
+      betterwhitelist.remove: true
+      betterwhitelist.clear: true
+      betterwhitelist.list: true
+      betterwhitelist.on: true
+      betterwhitelist.off: true
+      betterwhitelist.reload: true
+      betterwhitelist.help: true
+  betterwhitelist.betterwhitelist:
+    description: Give access to main BetterWhitelist command.
     default: op
-  comfywhitelist.add:
-    description: Give access to add player name to ComfyWhitelist.
+  betterwhitelist.add:
+    description: Give access to add player name to BetterWhitelist.
     default: op
-  comfywhitelist.remove:
-    description: Give access to remove player name from ComfyWhitelist.
+  betterwhitelist.remove:
+    description: Give access to remove player name from BetterWhitelist.
     default: op
     children:
-      comfywhitelist.clear: true
-  comfywhitelist.clear:
-    description: Give access to hard-reset ComfyWhitelist.
+      betterwhitelist.clear: true
+  betterwhitelist.clear:
+    description: Give access to hard-reset BetterWhitelist.
     default: false
-  comfywhitelist.list:
-    description: Give access to display all player names in ComfyWhitelist.
+  betterwhitelist.list:
+    description: Give access to display all player names in BetterWhitelist.
     default: op
-  comfywhitelist.on:
-    description: Give access to enable ComfyWhitelist.
+  betterwhitelist.on:
+    description: Give access to enable BetterWhitelist.
     default: op
-  comfywhitelist.off:
-    description: Give access to disable ComfyWhitelist.
+  betterwhitelist.off:
+    description: Give access to disable BetterWhitelist.
     default: op
-  comfywhitelist.reload:
-    description: Give access to reload ComfyWhitelist.
+  betterwhitelist.reload:
+    description: Give access to reload BetterWhitelist.
     default: op
-  comfywhitelist.help:
-    description: Displays information about ComfyWhitelist commands
+  betterwhitelist.help:
+    description: Displays information about BetterWhitelist commands
     default: op
-  comfywhitelist.status:
-    description: Displays status of the ComfyWhitelist (on/off)
+  betterwhitelist.status:
+    description: Displays status of the BetterWhitelist (on/off)
     default: op

@@ -5,6 +5,7 @@ import com.cocahonka.comfywhitelist.api.Storage
 import com.cocahonka.comfywhitelist.commands.SubCommand
 import com.cocahonka.comfywhitelist.config.message.MessageConfig
 import com.cocahonka.comfywhitelist.config.message.MessageFormat
+import org.bukkit.Server
 import org.bukkit.command.CommandSender
 
 /**
@@ -15,8 +16,8 @@ import org.bukkit.command.CommandSender
 class AddCommand(private val storage: Storage) : SubCommand {
 
     override val identifier = "add"
-    override val permission = "comfywhitelist.add"
-    override val usage = "/comfywl add <name>"
+    override val permission = "betterwhitelist.add"
+    override val usage = "/wl add <name>"
 
     override fun execute(sender: CommandSender, args: Array<String>): Boolean {
         if(isInvalidUsage(sender) { args.size == 1 }) return false
@@ -30,7 +31,10 @@ class AddCommand(private val storage: Storage) : SubCommand {
         val replacementConfig = MessageFormat.ConfigBuilders.nameReplacementConfigBuilder(playerName)
         val message = MessageConfig.playerAdded.replaceText(replacementConfig)
         sender.sendMessage(message)
-        return storage.addPlayer(playerName)
+
+        val playerUUID = sender.server.getPlayerUniqueId(playerName).toString()
+
+        return storage.addPlayer(playerUUID)
     }
 
 }

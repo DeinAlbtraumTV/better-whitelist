@@ -16,14 +16,14 @@ class HelpCommandTest : CommandTestBase() {
     private lateinit var commands: List<SubCommand>
     private val helpMessage: String =
         "<comfy>\n" +
-                "> /comfywl add <name>\n" +
-                "> /comfywl remove <name>\n" +
-                "> /comfywl list\n" +
-                "> /comfywl status\n" +
-                "> /comfywl on\n" +
-                "> /comfywl off\n" +
-                "> /comfywl clear\n" +
-                "> /comfywl reload"
+                "> /wl add <name>\n" +
+                "> /wl remove <name>\n" +
+                "> /wl list\n" +
+                "> /wl status\n" +
+                "> /wl on\n" +
+                "> /wl off\n" +
+                "> /wl clear\n" +
+                "> /wl reload"
 
     @BeforeEach
     override fun setUp() {

@@ -2,15 +2,15 @@
 no-permission: "<comfy><warning>Du hast keine Berechtigung, diesen Befehl zu verwenden.</warning>"
 inactive-command: "<comfy>Dieser Befehl ist <off>deaktiviert</off> via Konfiguration."
 invalid-usage: "<comfy><warning>Ungültige Befehlsverwendung.</warning>\nVerwende: <usage>"
-unknown-subcommand: "<comfy><warning>Unbekanntes Unterbefehl.</warning> Gib /comfywl help für eine Liste der Befehle ein."
+unknown-subcommand: "<comfy><warning>Unbekanntes Unterbefehl.</warning> Gib /wl help für eine Liste der Befehle ein."
 invalid-player-name: "<comfy><warning>Ungültiger Spielername.</warning>"
-plugin-reloaded: "<comfy>ComfyWhitelist <success>wurde erfolgreich neu geladen.</success>"
+plugin-reloaded: "<comfy>BetterWhitelist <success>wurde erfolgreich neu geladen.</success>"
 
 # Whitelist Statusnachrichten
-whitelist-enabled: "<comfy>ComfyWhitelist <success>aktiviert.</success>"
-whitelist-disabled: "<comfy>ComfyWhitelist <off>deaktiviert.</off>"
-whitelist-already-enabled: "<comfy>ComfyWhitelist <success>bereits aktiviert.</success>"
-whitelist-already-disabled: "<comfy>ComfyWhitelist <off>bereits deaktiviert.</off>"
+whitelist-enabled: "<comfy>BetterWhitelist <success>aktiviert.</success>"
+whitelist-disabled: "<comfy>BetterWhitelist <off>deaktiviert.</off>"
+whitelist-already-enabled: "<comfy>BetterWhitelist <success>bereits aktiviert.</success>"
+whitelist-already-disabled: "<comfy>BetterWhitelist <off>bereits deaktiviert.</off>"
 
 # Spielermanagement-Nachrichten
 not-whitelisted: "<warning>Du bist nicht auf der Whitelist.</warning>"

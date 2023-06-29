@@ -1,1 +1,1 @@
-rootProject.name = "comfywhitelist"
+rootProject.name = "betterwhitelist"

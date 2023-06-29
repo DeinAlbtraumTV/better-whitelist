@@ -13,8 +13,8 @@ import org.bukkit.command.CommandSender
 class HelpCommand(private val commands: List<SubCommand>) : SubCommand {
 
     override val identifier = "help"
-    override val permission = "comfywhitelist.help"
-    override val usage = "/comfywl help"
+    override val permission = "betterwhitelist.help"
+    override val usage = "/wl help"
 
     private val helpMessage by lazy {
         val builder = StringBuilder("<comfy>\n")

@@ -1,3 +1,5 @@
+# This is a fork of the ComfyWhitelist plugin made by cocahonka! Please check out their [plugin](https://github.com/cocahonka/comfy-whitelist)
+
 # ComfyWhitelist :scroll:
 
 [![Github All Releases](https://img.shields.io/github/downloads/cocahonka/comfy-whitelist/total)]()
